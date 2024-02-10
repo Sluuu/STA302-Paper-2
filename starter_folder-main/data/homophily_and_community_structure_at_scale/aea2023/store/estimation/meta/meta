@@ -1,0 +1,23 @@
+name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
+block_size_plot|stem|b114fd9cced48b19|2214ac5a2b870537|88b4eabfc0ce45a3|-163729182||t19425.8313768653s|c5be65bfe4515b59|80059|rds|local|vector|||0.018||
+coefficient_results|stem|5104fd714d4ddc9c|5a8993526d9e03de|bab587f74b92db9d|381609883||t19425.8313650596s|62ec3f364036f3b9|2047202848|rds|local|vector|||118.837||
+coefficients_table|stem|64c92eeed2b97dd2|d1404ec076c4ef91|05be4ccd43a7fbe3|-40237259||t19425.8318508506s|471094a96b72058b|742|rds|local|vector|||22.958|Please specify format in kable. kableExtra can customize either HTML or LaTeX outputs. See httpshaozhu233.github.iokableExtra for details.|
+data_path|stem|d6eaafadfd7bcf93|6e3c7816cbe76a76|c24f6a9c144258c7|1349504789|store/process_data/objects/list_data|t19423.37124615s|b55ebf691da4084b|122138227|file|local|vector|||0.155||
+descriptive_stats|stem|7a08b8f732bee299|a8b6c1959041fc73|b78e20b14fce2ca0|178527747||t19406.8741988236s|40d291bf5f9455ce|2649|rds|local|vector|||0.036||
+first_clustering_run|stem|eea6b251a6cd7ab3|2a22320ca744e70b|58eb64d3ac9a613d|-1638103588||t19425.6116089414s|33a99aaae7f2a5e0|12317915|rds|local|vector|||15869.037||
+g_tokyo_10core|stem|4dd3b182e67266dd|164282d5cfc34855|db773cd383cfd108|1815581207||t19406.3951579291s|47d774817bfe7a81|4272448|rds|local|vector|||2.749||
+get_config|function|cdb400351d48fc6a|||||||||||||||
+get_data_path|function|e7ea671f44d18e1c|||||||||||||||
+list_data|stem|d6eaafadfd7bcf93|39ba1f00669a83de|93eb07d9fc9d20e0|1058152174||t19406.3950993638s|b55ebf691da4084b|122138227|rds|local|vector|||19.5||
+lower_bound_plot|stem|a006f454ec0a6112|7c019199a3255dfa|5ca53e6af02b4ae3|-501215897||t19425.8313774671s|e9dbdf01776889a4|77341|rds|local|vector|||0.012||
+nodes_data|stem|e38ef6f108015ae0|10e06a1af5e3676e|e0e579fc6effd062|1680803074||t19425.8315850614s|c2642c0d7cf24aae|671258|rds|local|vector|||0.56||
+params|object|eb2ea6ac1e0c648b|||||||||||||||
+path_list_graph|stem|4dd3b182e67266dd|1a6eaec235e0a900|c24f6a9c144258c7|-1826754298|store/process_data/objects/g_tokyo_10core|t19422.0934886127s|47d774817bfe7a81|4272448|file|local|vector|||0||
+random_seed|stem|b8bdf48635bef62c|20bf83649eb59697|3c27b6be20bc6bef|-842655338||t19406.3944326917s|44989414465ff33d|49|rds|local|vector|||0.21||
+save_block_size_plot|stem|f7a442aa0c32f270|e7aed6f7f1e57840|9e7133a83bb4a34b|629530764|outputs/block_size_distribution.pdf|t19425.8318539987s|ef04e0bf2447d9e7|5057|file|local|vector|||0.264||
+save_lower_bound_plot|stem|986d2ec3eaa3b298|160e128c18b14ed6|141c1fd147126104|-437229838|outputs/lower_bound.pdf|t19425.8318550173s|b3d20f354dee6b71|5096|file|local|vector|||0.082||
+second_clustering_run|stem|b773e2282d50cfb0|a5e30bad80d6ac03|00fbb607de0bf094|-314525448||t19425.7315287436s|00e775828c6bd2b9|12221392|rds|local|vector|||10355.976||
+third_clustering_run|stem|1e4dc81963bc0361|159b1bcaa96c8b95|93f4a3166bed2789|1555766014||t19425.8239265271s|156b3d305579f7a6|998345242|rds|local|vector|||7733.277||
+params|object|e196bbd96804d1e3
+data_path|stem|d6eaafadfd7bcf93|6e3c7816cbe76a76|0614158709a6d3ca|1349504789|store/process_data/objects/list_data|t19423.37124615s|b55ebf691da4084b|122138227|file|local|vector|||0.218||
+path_list_graph|stem|4dd3b182e67266dd|1a6eaec235e0a900|0614158709a6d3ca|-1826754298|store/process_data/objects/g_tokyo_10core|t19422.0934886127s|47d774817bfe7a81|4272448|file|local|vector|||0||

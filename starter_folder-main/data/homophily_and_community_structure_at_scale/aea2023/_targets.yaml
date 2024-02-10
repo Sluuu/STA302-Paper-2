@@ -1,0 +1,13 @@
+process_data:
+  script: scripts/process_data.R
+  store: store/process_data
+estimation:
+  script: scripts/estimation.R
+  store: store/estimation
+
+process_data_dummy:
+  script: scripts/process_data.R
+  store: store/process_data_dummy
+estimation_dummy:
+  script: scripts/estimation.R
+  store: store/estimation_dummy

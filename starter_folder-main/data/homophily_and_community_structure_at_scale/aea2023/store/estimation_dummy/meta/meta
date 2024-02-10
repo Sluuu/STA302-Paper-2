@@ -1,0 +1,20 @@
+name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
+block_size_plot|stem|02a1adebbda7fddf|2214ac5a2b870537|faebad91f69452ee|-163729182||t19440.3263137287s|8c4c74be6c8aeee4|48718|rds|local|vector|||0.017||
+coefficient_results|stem|9e0828e25ff6ea3c|5a8993526d9e03de|59fd4de80fa51cc8|381609883||t19440.3263121546s|c1768e9c55ebbf42|55705663|rds|local|vector|||11.708||
+coefficients_table|stem|e3d6e9a38ee8dad3|d1404ec076c4ef91|a92eea0b5cf4ab8e|-40237259||t19440.326875724s|8964b151b5ff8af2|744|rds|local|vector|||48.333|Please specify format in kable. kableExtra can customize either HTML or LaTeX outputs. See httpshaozhu233.github.iokableExtra for details.|
+data_path|stem|0a17a73b559919d6|6e3c7816cbe76a76|8d2b073896c3ad54|1349504789|store/process_data_dummy/objects/list_data|t19424.0754417958s|88b9be3c20ec7e89|542597|file|local|vector|||0.217||
+descriptive_stats|stem|048133a7bebb6992|a8b6c1959041fc73|1206adc6d90d845c|178527747||t19424.0844511283s|b1488599997d0cbc|2002|rds|local|vector|||0.089||
+first_clustering_run|stem|57a5b9f327c256af|2a22320ca744e70b|e854f6638dd684d8|-1638103588||t19440.320025992s|5a8f4a53051210c0|7240463|rds|local|vector|||291.159|QuickTRANSfer stage steps exceeded maximum  150000. QuickTRANSfer stage steps exceeded maximum  150000. QuickTRANSfer stage steps exceeded maximum  150000. QuickTRANSfer stage steps exceeded maximum  150000. QuickTRANSfer stage steps exceeded maximum  150000. QuickTRANSfer stage steps exceeded maximum  150000. QuickTRANSfer stage steps exceeded maximum  150000. QuickTRANSfer stage steps exceeded maximum  150000. QuickTRANSfer stage steps exceeded maximum  150000. QuickTRANSfer stage steps exceeded maximum  72150. QuickTRANSfer stage steps exceeded maximum  41350|
+g_tokyo_10core|stem|2e1a0d29d66dfd3b|164282d5cfc34855|5b2e14b698dbb398|1815581207||t19424.0756085564s|5d673a36746302a8|2248827|rds|local|vector|||0.921||
+get_config|function|cdb400351d48fc6a|||||||||||||||
+get_data_path|function|e7ea671f44d18e1c|||||||||||||||
+list_data|stem|0a17a73b559919d6|39ba1f00669a83de|39a3b68ef8a3cf19|1058152174||t19424.0755832784s|88b9be3c20ec7e89|542597|rds|local|vector|||0.12||
+lower_bound_plot|stem|7fd0a84590a9014a|7c019199a3255dfa|c4d49f41f3577b99|-501215897||t19440.3263143769s|31b58c9f08fce46a|77374|rds|local|vector|||0.011||
+nodes_data|stem|41ac8d1a337e3513|10e06a1af5e3676e|ac15d0672b34def6|1680803074||t19440.3263162287s|2c8bcea0c7854a21|59387|rds|local|vector|||0.007||
+params|object|bdd3d223520aa311|||||||||||||||
+path_list_graph|stem|2e1a0d29d66dfd3b|1a6eaec235e0a900|8d2b073896c3ad54|-1826754298|store/process_data_dummy/objects/g_tokyo_10core|t19424.0755631394s|5d673a36746302a8|2248827|file|local|vector|||0||
+random_seed|stem|b8bdf48635bef62c|20bf83649eb59697|3c27b6be20bc6bef|-842655338||t19423.318707991s|44989414465ff33d|49|rds|local|vector|||0.164||
+save_block_size_plot|stem|4a866dce83736c83|e7aed6f7f1e57840|5001314508cd16f1|629530764|outputs/block_size_distribution.pdf|t19440.2297163161s|e330620ff08fddbc|4912|file|local|vector|||0.238||
+save_lower_bound_plot|stem|1ff30492946a1ba6|160e128c18b14ed6|18f82229c8452a7d|-437229838|outputs/lower_bound.pdf|t19440.229717705s|24234c6ad2bc4374|5123|file|local|vector|||0.094||
+second_clustering_run|stem|899dcdbf722c5757|a5e30bad80d6ac03|5ba956bf0af00f36|-314525448||t19440.3232788427s|64a1869ac50359a1|7168962|rds|local|vector|||277.489||
+third_clustering_run|stem|8127aa10cd14ace9|159b1bcaa96c8b95|614bbe2a2849c884|1555766014||t19440.3258790492s|f7bac5216d70d4b3|17703042|rds|local|vector|||217.726||

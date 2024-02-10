@@ -1,0 +1,15 @@
+^renv$
+^renv\.lock$
+^\.*\.Rproj$
+^\.Rproj\.user$
+^store$
+^scripts$
+^run\.R$
+^run\.sh$
+^outputs$
+^\_targets.yaml$
+^\.Renviron$
+^data/nodes\.csv$
+^data/edges\.csv$
+^data/nodes_dummy\.csv$
+^data/edges_dummy\.csv$

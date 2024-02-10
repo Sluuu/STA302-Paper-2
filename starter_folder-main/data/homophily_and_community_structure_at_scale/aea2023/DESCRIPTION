@@ -1,0 +1,28 @@
+Package: aea2023
+Type: Package
+Title: Homophily and Community Structure at Scale: An Application to a Large Professional Network
+Version: 0.1.0
+Author: Who wrote it
+Maintainer: The package maintainer <yourself@somewhere.net>
+Description: Replication package.
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    dplyr,
+    ggplot2,
+    gridExtra,
+    magrittr,
+    purrr,
+    tidyselect,
+    targets,
+    tarchetypes,
+    visNetwork,
+    qs,
+    stargazer,
+    tibble,
+    modelsummary,
+    kableExtra
+RoxygenNote: 7.2.3
+Suggests: 
+    testthat

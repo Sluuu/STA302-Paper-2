@@ -1,0 +1,19 @@
+name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
+base_igraph_network|stem|b67c4e72a812bcdc|d2d64f69ed2791a8|96101cf94cef9a85|1128740279||t19422.0929901364s|9741a0a6f85a8c94|368188963|rds|local|vector|||38.581||
+base_nonmissing_igraph_network|stem|a38cd0a4740cc82f|9de955105d911c81|b91388c0b04e4da7|-1935448514||t19422.0932769443s|7108c28fd8ff567f|69236237|rds|local|vector|||3.729||
+df_edges|stem|6501d1214a400b18|2798ec38f2c5e35e|192b51bc4dd44a32|-1759520265||t19423.3705446628s|1ae1c5f80ff02aa6|67193950|rds|local|vector|||9.125||
+df_nodes|stem|a2f23e3681210faf|0ef17f6172467408|3e3168dce0606c3a|-249992236||t19423.3708123039s|e035a1736a74cb5b|54944473|rds|local|vector|||6.409||
+g_tokyo_10core|stem|4dd3b182e67266dd|2be0b2a9e2e203e9|2d86188e5bbeaec6|1815581207||t19422.0934886127s|47d774817bfe7a81|4272448|rds|local|vector|||13.426||
+get_config|function|cdb400351d48fc6a|||||||||||||||
+get_data_path|function|e7ea671f44d18e1c|||||||||||||||
+graph|stem|1a6d9867427a1adb|f0255277558df5a3|cb67837f644d4df2|-233210402||t19422.0933068519s|6260d0c866797d75|3516696|rds|local|vector|||1.325||
+graph_stats|stem|984cf2e10a4c655b|8c8b8c4f7a124e8f|07b4dfdc6f7188d6|817422876||t19422.0934906034s|53187ddd0f5fd8f6|163951|rds|local|vector|||0.113||
+list_data|stem|d6eaafadfd7bcf93|e6ca696e0b7f0388|ca113c4adca5befa|1058152174||t19423.37124615s|b55ebf691da4084b|122138227|rds|local|vector|||0||
+list_rawdata|pattern|0b38cb45f0439825|f82bd32c666b8a20||-1626800637||||122138423|rds|local|list||list_rawdata_45f24f04*list_rawdata_802884d7|13.286||
+list_rawdata_45f24f04|branch|a2f23e3681210faf|f82bd32c666b8a20|1cf3dc7d1348b407|1788505020||t19406.3914120648s|e035a1736a74cb5b|54944473|rds|local|list|list_rawdata||5.766|The following named parsers dont match the column names src, dst|
+list_rawdata_802884d7|branch|6501d1214a400b18|f82bd32c666b8a20|d00a09d7ba4266ce|-449693592||t19406.3917447991s|1ae1c5f80ff02aa6|67193950|rds|local|list|list_rawdata||7.52|The following named parsers dont match the column names id|
+nodal_features|stem|95cee720c967e3c6|acfe170c64523e9b|a3dad144c40657ed|-1050743962||t19406.3911548405s|3e0fddb8c2da2da5|154|rds|local|vector|||0.001||
+params|object|e196bbd96804d1e3|||||||||||||||
+path_data|stem|6f122033bb626f61|e254d1257b0d25a5|e2ae26009a40218c|1585381633||t19406.391154609s|36500b95d6893aee|74|rds|local|vector||path_data_3d3fcf59*path_data_a3c3d98e|0.184||
+path_edges|stem|7680794682ea77df|ce540aba222fa761|0614158709a6d3ca|-376877579|data/edges.csv|t19406.3828231975s|745d29817ca16e60|280446995|file|local|vector|||0.257||
+path_nodes|stem|eeef4abd4ee38ac4|65f38d419959b256|0614158709a6d3ca|-678401379|data/nodes.csv|t19406.3822590724s|57368b49c3df5c54|329912380|file|local|vector|||0||

@@ -1,0 +1,118 @@
+---
+title: "Replicated results"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_knit$set(root.dir = rprojroot::find_rstudio_root_file())
+library(magrittr)
+
+# An auxiliary function to get a targets object depending on `TAR_PROJECT`
+read_target <- function(name_target, tar_project) {
+  name_target <- as.character(substitute(name_target))
+  withr::with_envvar(
+    new = c("TAR_PROJECT" = tar_project),
+    targets::tar_read_raw(name_target)
+  )
+}
+```
+
+This R Markdown demonstrates how to retrieve the replicated results from the `targets` pipeline.
+
+Before running the code below, make sure you have completed `source("run.R")`.
+
+If you have run the pipeline with dummy data, set the `R_CONFIG_ACTIVE` environment variable to `"dummy"`
+Otherwise, leave `R_CONFIG_ACTIVE` unspecified or set it to `"default"`.
+
+# Summary statistics
+
+## Network statistics
+
+```{r}
+project_preprocess <- purrr::pluck(config::get(), "tar_projects", "preprocess")
+
+graph_stats <- read_target(graph_stats, project_preprocess)
+
+graph_stats$network_stats %>%
+  dplyr::mutate(dplyr::across(c(k_core, n_nodes, edges, triangles), as.integer)) %>%
+  modelsummary::datasummary_df()
+```
+
+### Degree
+
+```{r}
+as.list(graph_stats$degree_stats) %>%
+  data.frame() %>%
+  dplyr::rename(`1st.Qu.` = X1st.Qu., `3rd.Qu.` = X3rd.Qu.) %>%
+  modelsummary::datasummary_df()
+```
+
+## Nodal characteristics
+
+### Industry
+
+```{r}
+project_estimation <- purrr::pluck(config::get(), "tar_projects", "estimation")
+read_target_est <- purrr::partial(read_target, tar_project = project_estimation)
+```
+
+
+```{r}
+node_stats <- read_target_est(descriptive_stats)
+
+node_stats$industry_counts %>%
+  head(5) %>%
+  dplyr::select(large_category_en, industry_share) %>%
+  dplyr::mutate(industry_share = industry_share * 100) %>%
+  dplyr::rename(Industry = large_category_en, `Share in the sample (%)` = industry_share) %>%
+  modelsummary::datasummary_df(fmt = 1)
+```
+
+
+### Area
+
+```{r}
+node_stats$city_counts %>%
+  dplyr::mutate(share = 100 * city_count / sum(city_count)) %>%
+  head(5) %>%
+  dplyr::summarise(share = sum(share)) %>%
+  dplyr::mutate(area = "Minato-ku, Chiyoda-ku, Shibuya-ku, CHuo-ku, Shinjuku-ku") %>%
+  dplyr::select(area, share) %>%
+  dplyr::rename(Area = area, `Share in the sample (%)` = share) %>%
+  modelsummary::datasummary_df(fmt = 1)
+```
+
+### Occupation
+
+```{r}
+node_stats$occupation_counts %>%
+  head(2) %>%
+  dplyr::mutate(Occupation = c("Sales-related positions", "Company directors")) %>%
+  dplyr::select(Occupation, occupation_share) %>%
+  dplyr::mutate(occupation_share = occupation_share * 100) %>%
+  dplyr::rename(`Share in the sample (%)` = occupation_share) %>%
+  modelsummary::datasummary_df(fmt = 1)
+```
+
+
+# Figure 2: Results of the Block Recovery Step
+
+## (a) Lower Bound Convergence
+
+```{r}
+read_target_est(lower_bound_plot)
+```
+
+## (b) Block Size Distribution
+
+```{r}
+read_target_est(block_size_plot)
+```
+
+# Table 1: HERGM Parameter Estimates
+
+```{r, results='asis'}
+read_target_est(coefficients_table)
+```
+

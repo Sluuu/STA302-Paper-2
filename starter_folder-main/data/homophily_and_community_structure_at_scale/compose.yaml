@@ -1,0 +1,28 @@
+version: "3"
+services:
+  rstudio:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: aea2023/professional-network
+    container_name: aea2023-rstudio
+    ports:
+      - "8787:8787"
+    environment:
+      - USERID=${USERID}
+      - GROUPID=${GROUPID}
+      - PASSWORD=${PASSWORD}
+    volumes:
+      - ${PWD}/aea2023:/home/rstudio/aea2023
+      - ${RENV_PATHS_ROOT:-~/.cache/R/renv}:/home/rstudio/.cache/R/renv
+
+  reproduce-results:
+    image: aea2023/professional-network
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: aea2023
+    volumes:
+      - ${PWD}/aea2023:/home/rstudio/aea2023
+      - ${RENV_PATHS_ROOT:-~/.cache/R/renv}:/root/.cache/R/renv
+    entrypoint: "./run.sh"

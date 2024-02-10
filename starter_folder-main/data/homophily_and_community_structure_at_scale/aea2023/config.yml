@@ -1,0 +1,26 @@
+default:
+  path_raw_node: "data/nodes.csv"
+  path_raw_edge: "data/edges.csv"
+  path_list_graph: "store/process_data/objects/g_tokyo_10core"
+  path_list_processd_data: "store/process_data/objects/list_data"
+  n_cluster: 100
+  n_iteration_without_covariate: 10000
+  n_iteration_with_covariate: 100
+  tar_projects:
+    preprocess:
+      - process_data
+    estimation:
+      - estimation
+
+dummy:
+  path_raw_node: "data/nodes_dummy.csv"
+  path_raw_edge: "data/edges_dummy.csv"
+  path_list_graph: "store/process_data_dummy/objects/g_tokyo_10core"
+  path_list_processd_data: "store/process_data_dummy/objects/list_data"
+  n_iteration_without_covariate: 500
+  n_iteration_with_covariate: 100
+  tar_projects:
+    preprocess:
+      - process_data_dummy
+    estimation:
+      - estimation_dummy
